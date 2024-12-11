@@ -16,3 +16,18 @@
 // console.log(imc(20, 300))
 
 
+// function cor(cor){
+//     if(cor != "azul") {
+//         return "odeio"
+//     } else if ("verde"){
+//         return "ok"
+//     } else {
+//         return "fds"
+//     }
+// }
+
+// console.log(cor("azul"))
+
+// addEventListener('click', () => {
+//     console.log("pd")
+// })
