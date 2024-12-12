@@ -94,3 +94,7 @@
 
 // console.log(data(1))
 
+// addEventListener("scroll" , () => {
+//     let nome = "ryan"
+//     console.log((nome))
+// })
