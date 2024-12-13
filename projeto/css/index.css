@@ -11,7 +11,7 @@ img {
     display: block;
     max-width: 100%;
     object-fit: cover;
-    width: 500px;
+    height: 300px;
 }
 
 
@@ -54,7 +54,32 @@ body {
     }
 }
 
-.grid {
-    grid-column: 2 /4;
+.grid  {
+    grid-column: 2 / 4 ;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+
+    li {
+        grid-column: 2/ 4;
+    }
+
+    section {
+        grid-column: 2/ 4;
+    }
 }
+
+
+.faq {
+    display: grid;
+    grid-column: 3 /4;
+    grid-template-columns: 90px 300px 1fr;
+
+
+}
+
+
+
 
