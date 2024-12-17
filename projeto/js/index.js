@@ -1,7 +1,9 @@
+initTab();
 function initTab() {
   const tabMenu = document.querySelectorAll(".js-tabmenu li");
   const tabContent = document.querySelectorAll(".js-tabcontent section");
-  const classActive = 'ativo'
+  const classActive = "ativo";
+
   //navegação por tab
 
   if (tabMenu.length && tabContent.length) {
@@ -20,16 +22,13 @@ function initTab() {
         activeTab(index);
       });
     });
-  };
-};
+  }
+}
 
-initTab();
-
+acordion();
 function acordion() {
-
   const listaAccordion = document.querySelectorAll(".js-accordion dt");
-  const classActive = 'ativo'
-
+  const classActive = "ativo";
 
   if (listaAccordion.length) {
     listaAccordion[0].classList.add(classActive);
@@ -43,7 +42,60 @@ function acordion() {
     listaAccordion.forEach((item) => {
       item.addEventListener("click", activeAccordion);
     });
-  };
-};
+  }
+}
 
-acordion();
+scrollSuave();
+function scrollSuave() {
+  const Linkmenu = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function scrollToSection(e) {
+    e.preventDefault();
+
+    const href = e.currentTarget.getAttribute("href");
+
+    const section = document.querySelector(href);
+
+    const top = section.offsetTop;
+
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    // window.scrollTo({
+    //     top: top,
+    //     behavior: "smooth"
+    // })
+
+    console.log(top);
+  }
+
+  Linkmenu.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+  });
+}
+
+animationScroll();
+function animationScroll() {
+
+  const sections = document.querySelectorAll(".js-scroll");
+
+  const windowMetade = window.innerHeight * 0.6;
+
+  function animar() {
+    sections.forEach((e) => {
+      const topSection = e.getBoundingClientRect().top;
+
+      const sectionVisible = topSection - windowMetade < 0;
+
+      sectionVisible ? e.classList.add("ativo") : e.classList.remove("ativo");
+
+      // console.log(topSection)
+    });
+  }
+
+  animar();
+
+  window.addEventListener("scroll", animar);
+}
