@@ -80,20 +80,56 @@
 //alterando valor
 
 
-const dog = {
-    cor: "preto",
-    raca: "ko",
-    idade: 10,
+// const dog = {
+//     cor: "preto",
+//     raca: "ko",
+//     idade: 10,
 
-    latir(pessoa) {
-        if(pessoa === "homem"){
-            return "latir"
-        } else {
-            return "grunido"
-        }
+//     latir(pessoa) {
+//         if(pessoa === "homem"){
+//             return "latir"
+//         } else {
+//             return "grunido"
+//         }
              
-    } 
+//     } 
+// }
+
+// console.log(JSON.stringify(dog))
+
+
+// function Carro(){
+//     this.marca = "fiat";
+//     this.modelo = "rapido";
+//     this.ano = 2000;
+// }
+
+// const honda = new Carro()
+
+
+// const uno = new Carro()
+// uno.marca = "chevrole"
+
+// console.log(uno)
+
+
+function Veiculo(marcaAtribuida, precoAtribuido, ano){
+    const taxa = 0.6
+    const precoFinal = precoAtribuido * taxa
+    this.marca = marcaAtribuida
+    this.preco = precoFinal
+    this.ano = ano
 }
 
-console.log(dog.latir("mulher"))
+
+const carro = new Veiculo("honda", 20000, 20);
+
+const bike = new Veiculo('bmx', 30000);
+
+const moto = new Veiculo("yamaha", 40000);
+
+console.log(JSON.stringify(bike))
+console.log(JSON.stringify(carro))
+console.log(JSON.stringify(moto))
+
 

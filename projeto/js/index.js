@@ -68,7 +68,7 @@ function scrollSuave() {
     //     behavior: "smooth"
     // })
 
-    console.log(top);
+    // console.log(top);
   }
 
   Linkmenu.forEach((link) => {
