@@ -42,15 +42,69 @@
 // }
 
 
-const frutas = ["banana", "maçã", "pera", "uva"]
+// const frutas = ["banana", "maçã", "pera", "uva"]
 
-for(let i = 0; i < frutas.length; i++){
-   if(frutas[i] == "pera"){
-      break 
-   }
-   console.log(frutas[i])
-}
+// for(let i = 0; i < frutas.length; i++){
+//    if(frutas[i] == "pera"){
+//       break 
+//    }
+//    console.log(frutas[i])
+// }
 
-const ultimafruta = frutas[frutas.length - 1]
+// const ultimafruta = frutas[frutas.length - 1]
 
-console.log(ultimafruta)
+// console.log(ultimafruta)
+
+
+// const idades = [1,38,23,75,50,8,36,90,43,22]
+// const slice = idades.slice(0, 4)
+
+// console.log(slice)
+
+// idades.forEach((valor, i, array) => {
+//   array[i] = valor + 1
+// })
+// console.log(slice)
+
+// const someiMap = idades.map(valor => valor + 2)
+
+// console.log(someiMap)
+
+
+// const carro = ['ford' , 'fiat', 'honda', 'fazer', 'stanley']
+
+//remove primeiro valor
+// carro.shift() 
+
+//remove ultimo valor
+// carro.pop()
+
+//adicionar
+// carro.push('macaco', 'praia')
+
+//add no inicio
+// carro.unshift('macaco', 'praia')
+
+//ordem alfabetica ou numerica
+// carro.sort()
+
+//array ao contrario
+// carro.reverse()
+
+// verifica se existe 
+// console.log(carro.includes('honda'))
+
+
+
+
+
+const carro = ['ford' , 'fiat', 'honda', 'fazer', 'stanley']
+
+
+carro.forEach((valor, i, array) => {
+  array[i] = valor.toLocaleUpperCase() + 1
+   // console.log(valor.toUpperCase())
+})
+
+
+console.log(carro)
