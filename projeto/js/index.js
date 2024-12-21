@@ -1,4 +1,4 @@
-initTab();
+
 function initTab() {
   const tabMenu = document.querySelectorAll(".js-tabmenu li");
   const tabContent = document.querySelectorAll(".js-tabcontent section");
@@ -24,8 +24,8 @@ function initTab() {
     });
   }
 }
+initTab();
 
-acordion();
 function acordion() {
   const listaAccordion = document.querySelectorAll(".js-accordion dt");
   const classActive = "ativo";
@@ -44,8 +44,8 @@ function acordion() {
     });
   }
 }
+acordion();
 
-scrollSuave();
 function scrollSuave() {
   const Linkmenu = document.querySelectorAll('.js-menu a[href^="#"]');
 
@@ -75,8 +75,8 @@ function scrollSuave() {
     link.addEventListener("click", scrollToSection);
   });
 }
+scrollSuave();
 
-animationScroll();
 function animationScroll() {
 
   const sections = document.querySelectorAll(".js-scroll");
@@ -99,3 +99,4 @@ function animationScroll() {
 
   window.addEventListener("scroll", animar);
 }
+animationScroll();
