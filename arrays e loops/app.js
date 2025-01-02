@@ -98,13 +98,46 @@
 
 
 
-const carro = ['ford' , 'fiat', 'honda', 'fazer', 'stanley']
+// const carro = ['ford' , 'fiat', 'honda', 'fazer', 'stanley']
 
 
-carro.forEach((valor, i, array) => {
-  array[i] = valor.toLocaleUpperCase() + 1
-   // console.log(valor.toUpperCase())
-})
+// carro.forEach((valor, i, array) => {
+//   array[i] = valor.toLocaleUpperCase() + 1
+//    // console.log(valor.toUpperCase())
+// })
 
 
-console.log(carro)
+// console.log(carro)
+
+// const li = document.querySelectorAll('li')
+
+// li.forEach(i => i.classList.add('opa'))
+
+
+
+// const carro = ['ford' , 'fiat', 'honda', 'fazer', 'stanley']
+
+// const novoArray = carro.map((item, index, array) =>{
+//    array[index] = item +=' 1'
+//    return array
+// })
+
+// console.log(novoArray)
+
+
+// const num = [1, 3, 5, 6, 1, 5, 20]
+// const x2 = num.map((n, i , array) => {
+//    i = n * 2 + 1
+//    return i 
+// })
+
+// console.log(x2)
+
+// const aulas = [10, 25, 30]
+
+// const res = aulas.reduce((acumulador, item, index, array) => {
+//    console.log(acumulador, item, index, array)
+//    return
+// } , 0)
+
+
