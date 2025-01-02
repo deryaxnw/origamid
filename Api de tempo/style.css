@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(85, 84, 84);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px .625rem rgba(117, 195, 240, 0.541);
+
+    max-width: 800px;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+   
+}
+
+main #search-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main #search-form form {
+    display: flex;
+    width: 100%;
+    gap: .625rem;
+
+    margin-bottom: 1rem;
+}
+
+
+main #search-form input {
+   flex: 1;
+   padding: 10px;
+   border: none;
+   padding: 0 10px;
+   font-size: 1rem;
+}
+
+main #search-form button {
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(156, 150, 150, 0.363);
+
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(11, 184, 97, 0.678);
+        transition: 0.5s;
+    }
+}
+
+
+main #tempo-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #tempo-info .tempo-dados h2 {
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+}
+
+main #tempo-info .tempo-dados span {
+    font-size: 3rem;
+    font-weight: bold;
+}
