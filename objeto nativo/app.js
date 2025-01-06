@@ -81,3 +81,10 @@ Math
 
 // console.log(soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
 // limparPreco(listaPreco[1])
+
+
+
+
+
+
+

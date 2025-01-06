@@ -213,18 +213,21 @@
 // }
 
 
-// function Pessoa(nome, sobrenome, idade){
-//     this.nome = nome;
-//     this.sobrenome = sobrenome;
-//     this.idade = idade;
-// }
+function Pessoa(nome, sobrenome, idade){
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+    this.idade = idade;
+}
 
 
-// Pessoa.prototype.nomeCompleto = function() {
-//     return `${this.nome} ${this.sobrenome}`
-// }
+Pessoa.prototype.nomeCompleto = function() {
+    return `${this.nome} ${this.sobrenome}`
+}
 
-// const ryan = new Pessoa('ryan', 'olveira', 19)
+const ryan = new Pessoa('ryan', 'olveira', 19)
+
+
+
 
 
 // const lista = document.querySelector('li')
