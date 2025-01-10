@@ -1,5 +1,3 @@
-
-
 //obejtos nativos
 /*
 Object
@@ -10,9 +8,7 @@ NUmber
 Math
 */
 
-
 //obejtos de browser
-
 
 /*  
     window
@@ -21,7 +17,6 @@ Math
     HTMLCollection
     NodeList
 */
-
 
 // const ma = Math.min(1,3,4,5,72,6,32,6); //menor numero
 // const maa = Math.max(1,3,4,5,72,6,32,6);    //maior numero
@@ -32,31 +27,22 @@ Math
 
 // console.log(numero)
 
-
-
 // numero aleatorio entre 72 e 40
-
-
 
 // const numero = Math.floor(Math.random() * (72 - 80 + 1)) + 80
 //const numero = Math.floor(Math.random() * (max - min + 1)) + min
 
-
 // console.log(numero)
-
 
 // const mil = Math.floor(Math.random() * (1050 - 2000 + 1)) + 2000
 
 // console.log(mil)
 
-
 // const num = '4, 10, 50, -1'
 // const parse = parseFloat(num)
 // const maior = Math.max(parse)
 
-
 // console.log(maior)
-
 
 // const array = num.split(', ')
 
@@ -82,9 +68,33 @@ Math
 // console.log(soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
 // limparPreco(listaPreco[1])
 
+//verifica o tipo de objeto
+// function verificarDado(dado) {
+//     return Object.prototype.toString.call(dado)
+// }
+
+// console.log(verificarDado())
+
+//crie um obejto quadrado com a propriedade lados e torne ela imutável
+
+// const quadrado = {};
+
+// Object.defineProperties(quadrado, {
+//     lados: {
+//         value: 4,
+//         enumerable: true,
+//     }
+// })
+
+// console.log(quadrado)
 
 
 
 
+// const configuracao = {
+//     width: 800,
+//     height: 600,
+//     background: '#333'
+// }
 
-
+// Object.freeze(configuracao)
